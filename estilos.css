@@ -1,3 +1,7 @@
+body {
+  background-image: url(/img/fondobody.jpg);
+}
+
 .navbar {
   padding: 0px;
 }
@@ -5,6 +9,7 @@
   background-color: #ffffff;
   margin: 0 60px;
   padding: 2px;
+  background-image: url(/img/fondobody.jpg);
 }
 .navbar-nav img {
   width: 25px;
@@ -27,9 +32,11 @@
 }
 
 .navbar-collapse {
+  padding: 10px;
   align-items: center;
   justify-content: space-between;
   background-color: #f8f8f8;
+  background-image: url(/img/fondobody.jpg);
 }
 
 .navbar-nav a:hover:not(#cart) {
@@ -37,7 +44,6 @@
   font-style: italic;
   transition: 2s;
   border-radius: 20%;
-  background-color: rgb(20, 182, 20);
 }
 @media screen and (max-width: 767px) {
   .navbar-brand {
@@ -62,10 +68,12 @@
 
 .hero {
   position: relative;
+
   background-position: center;
   min-height: 450px;
   text-align: center;
   overflow: hidden;
+  background-color: #ccc;
 }
 .hero::before {
   content: "";
@@ -74,7 +82,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-image: url(/images/hero.jpg);
+  opacity: 0.3;
   z-index: 1;
 }
 
@@ -105,14 +114,14 @@ h1 {
 
 .glasses_box {
   text-align: center;
-  padding-bottom: 15px;
+  padding: 20px;
 }
 
 .glasses_box img {
   border: solid rgb(177, 170, 170);
 }
 
-.glasses_box h3:hover {
+.glasses_box h2:hover {
   transition: 1s;
   transform: scale(120%);
 }
@@ -255,7 +264,6 @@ span {
   border-radius: 10%;
   font-size: large;
   font-size: bold;
-  background-color: rgb(193, 197, 197);
 }
 .close-btn {
   position: absolute;
@@ -335,58 +343,4 @@ span {
   border-radius: 50%;
   padding: 5px 8px;
   font-size: 12px;
-}
-.form-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  max-width: 300px;
-  margin: auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-container h2 {
-  text-align: center;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.form-group textarea {
-  resize: vertical;
-  height: 150px;
-}
-
-.form-group button {
-  background-color: #28a745;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 100%;
-}
-
-.form-group button:hover {
-  background-color: #218838;
-}
-
-.form-message {
-  text-align: center;
-  color: green;
-  font-size: 14px;
 }
